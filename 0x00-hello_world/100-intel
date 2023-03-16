@@ -1,7 +1,2 @@
 #!/bin/bash
-
-# Get the name of the C file from the environment variable CFILE
-CFILE=${CFILE:-main.c}
-
-# Generate the assembly code using gcc and output to a file with the same name as the C file but with .s extension
-gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
+gcc -S -masm=intel $CFILE -o ${CFILE%.*}.s
