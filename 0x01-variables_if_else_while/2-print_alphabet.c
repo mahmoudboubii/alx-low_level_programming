@@ -1,11 +1,14 @@
-#include <stdio.h>
-
 int main(void)
 {
-    char c;
+char c = 'a';
 
-    for (c = 'a'; c <= 'z'; ++c)
-        putchar(c);
+while (c <= 'z')
+{
+putchar(c);
+c++;
+}
 
-    return (0);
+putchar('\n');
+
+return (0);
 }
