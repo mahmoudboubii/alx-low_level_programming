@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: Prints all possible combinations of two two-digit numbers
+ * ranging from 0 to 99, in ascending order, with each combination separated by a comma
+ * followed by a space, and each number separated by a space. All numbers are printed with two digits.
+ * Returns: Always 0 (Success)
+ */
+
 int main(void)
 {
 int i, j, k, l;
